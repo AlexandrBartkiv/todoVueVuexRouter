@@ -112,7 +112,7 @@ footer{
         width: 421px;
         padding: 40px 30px 0 30px;
         background-color: white;
-        span{
+        .before{
             font-family: $fontcommon;
             font-size: 18px;
             color: #333333;
@@ -121,7 +121,7 @@ footer{
             width: 421px;
             height: 53px;
             border: solid 2px #9A9A9A;
-            margin-top: 8px;
+            margin:8px 0 5px 0;
             input{
                 height: 100%;
                 width: 406px;
@@ -133,6 +133,15 @@ footer{
                 color: #333333;
                 padding: 0 0 0 15px;
             }
+        }
+        img{
+            margin: 0 10px 0 0;
+        }
+        .after{
+            font-family: $fontcommon;
+            font-size: 16px;
+            line-height: 18.75px;
+            color: #D60000;
         }
     }
     >.button{

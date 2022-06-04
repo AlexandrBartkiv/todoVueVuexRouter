@@ -142,7 +142,7 @@ footer p {
   background-color: white;
 }
 
-.login_Form .inp_wrap span {
+.login_Form .inp_wrap .before {
   font-family: Roboto;
   font-size: 18px;
   color: #333333;
@@ -152,7 +152,7 @@ footer p {
   width: 421px;
   height: 53px;
   border: solid 2px #9A9A9A;
-  margin-top: 8px;
+  margin: 8px 0 5px 0;
 }
 
 .login_Form .inp_wrap .inp input {
@@ -165,6 +165,17 @@ footer p {
   line-height: 21.09px;
   color: #333333;
   padding: 0 0 0 15px;
+}
+
+.login_Form .inp_wrap img {
+  margin: 0 10px 0 0;
+}
+
+.login_Form .inp_wrap .after {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 18.75px;
+  color: #D60000;
 }
 
 .login_Form > .button {

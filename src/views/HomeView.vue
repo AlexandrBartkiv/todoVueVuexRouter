@@ -19,20 +19,20 @@
           reporting, business processes, KPI's
         </p>
         <div>
-          <img src="../assets/Vector.png" alt="" srcset="">
+          <img src="../assets/v.png" alt="" srcset="">
           <span>Interactive Reporting</span>
           <p>In just a few clicks, you can connect your data from 1C, CRM (Bitrix24, AmoCRM, ZohoCRM), <br> 
             E-commerce (PROM.UA, Rozetka, ebay), Logistic (Nova Poshta), Google Analytics and many more <br> 
             systems that reflect different aspects of business activities.</p>
         </div>
         <div>
-          <img src="../assets/Vector.png" alt="" srcset="">
+          <img src="../assets/v.png" alt="" srcset="">
           <span>Automated data updates</span>
           <p>The application automatically updates and <br> 
             structures the data in just 60 seconds, saving you time and money.</p>
         </div>
         <div>
-          <img src="../assets/Vector.png" alt="" srcset="">
+          <img src="../assets/v.png" alt="" srcset="">
           <span>Data Security</span>
           <p>The Bank guarantees the safety of your personal data, ensuring their integrity and confidentiality.</p>
         </div>

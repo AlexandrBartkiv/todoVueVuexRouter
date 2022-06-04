@@ -1,7 +1,12 @@
 <template>
   <div class="login_Form">
-    <VueField type="Name"/>
-    <VueField type="Password"/>
+    <VueField 
+      type="Name"
+      val="Enter your name please"
+    />
+    <VueField 
+      type="Password"
+      val="Enter your password please"/>
     <VueButton text="LOGIN"/>
     <span>Forgot password</span>
     <div class="reg">
