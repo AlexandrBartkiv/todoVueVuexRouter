@@ -11,6 +11,7 @@
           Business Analytics Online
         </h1>
       </div>
+       <VueLogin/>
       <div class="info">
         <p>
           <span>Business Analytics</span>  — a new, convenient tool for managing and forecasting your business <br> 
@@ -52,7 +53,7 @@
       <p>
 Copyright © 2020 Citigroup Inc. Citibank, N.A. Member FDIC. Equal Opportunity Lender.</p>
     </footer>
-    <VueLogin/>
+   
   </div>
 </template>
 
