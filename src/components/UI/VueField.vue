@@ -1,7 +1,12 @@
 <template>
 <div class="inp_wrap">
     <span class="before">{{type}}</span>
-    <div class="inp"><input type="text"></div>
+    <div class="inp">
+        <input 
+            v-model="value" 
+            type="text"
+            @input="view">
+            </div>
     <div>
         <img src="../../assets/x.png" alt="">
         <span class="after">{{val}}</span>
@@ -15,9 +20,13 @@ export default {
     props: ['type','val'],
     setup() {
         const value = ref('')
-
+        const view = function(){
+            console.log(value.value)
+        }
+        
         return{
-            value
+            value,
+            view
         }
     },
 }
