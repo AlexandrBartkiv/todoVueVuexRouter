@@ -8,7 +8,29 @@ html,body,p,h1,h2,h3{
     margin: 0;
     padding: 0;
 }
-
+.button{
+    width: 421px;
+    height: 35px;
+    border: solid 2px $ButtonsAndTopics;
+    background-color: $ButtonsAndTopics;
+    font-family: $fontcommon;
+    color: white;
+    font-family: $fontcommon;
+    font-size: 25px;
+    margin: 40px 30px 20px 30px;
+    transition: 0.1s;
+    &:hover{
+        border: solid 2px $ButtonsAndTopics;
+        background: none;
+        color: $ButtonsAndTopics;
+        transition: 0.2s;
+    }
+    &:active{
+        background: #50d0ff;
+        border: solid 2px #50d0ff;
+        color: white;
+    }
+}
 .head{
     width: 100%;
     height: 53px;
@@ -97,7 +119,6 @@ footer{
         margin: 30.5px 0 0 376px;
     }
 }
-
 .login_Form{
     width: 481px;
     height: 464px;
@@ -144,29 +165,6 @@ footer{
             color: #D60000;
         }
     }
-    >.button{
-        width: 421px;
-        height: 35px;
-        border: solid 2px $ButtonsAndTopics;
-        background-color: $ButtonsAndTopics;
-        font-family: $fontcommon;
-        color: white;
-        font-family: $fontcommon;
-        font-size: 25px;
-        margin: 40px 30px 20px 30px;
-        transition: 0.1s;
-        &:hover{
-            border: solid 2px $ButtonsAndTopics;
-            background: none;
-            color: $ButtonsAndTopics;
-            transition: 0.2s;
-        }
-        &:active{
-            background: #50d0ff;
-            border: solid 2px #50d0ff;
-            color: white;
-        }
-    }
     span{
        font-family: $fontcommon;
        font-size: 20px;
@@ -184,6 +182,121 @@ footer{
             color: #333333;
             font-family: $fontcommon;
             font-size: 25px;
+        }
+    }
+}
+.ToDoPageWraper{
+    height: 100vh;
+    width: auto;
+    position: relative;
+    .background{
+        height: 797px;
+        width: 100%;
+        background: $headerWithLogo;
+        position: absolute;
+        opacity: 0.7;
+    }
+    .toDoWraper{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        
+        img{
+            height: 119px;
+            width: 186px;
+            z-index: 1;
+            margin: 65px 0 66px 0;
+        }
+        .todo{
+            width: 80%;
+            max-width: 1191px;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #ffffff;
+            z-index: 1;
+            .addTask{
+                width: 70%;
+                height: 60px;
+                background-color: #ffffff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 20px 0 30px 0;
+                input{
+                    height: 100%;
+                    width: 70%;
+                    outline: none;
+                    border: none;
+                    background-color: #3333335e;
+                    font-family: $fontcommon;
+                    color: white;
+                    font-size: 25px;
+                    padding: 0 20px 0 20px;
+                }
+                .button{
+                    width: fit-content;
+                    margin: 0;
+                }
+            }
+            .task{
+                width: 70%;
+                height: 60px;
+                background-color: #ffffff44;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                margin: 20px 0 30px 0;
+                .non_comp{
+                    border: solid 3px #0076C0;
+                    border-radius: 3px;
+                    background:none;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    height: 20px;
+                    width: 20px;
+                    padding: 3px;
+                    margin: 0 20px 0 0;
+                }
+                .comp{
+                    border: solid 3px #0076C0;
+                    border-radius: 3px;
+                    background: url(../assets/v.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    height: 20px;
+                    width: 20px;
+                    padding: 3px;
+                    margin: 0 20px 0 0;
+                }
+                input{
+                    height: 100%;
+                    width: 70%;
+                    outline: none;
+                    border: none;
+                    background-color: #3333335e;
+                    font-family: $fontcommon;
+                    color: white;
+                    font-size: 25px;
+                    padding: 0 20px 0 20px;
+                }
+                .inp_comp{
+                    text-decoration: line-through;
+                    background-color: #00c02088;
+                }
+                .bin{
+                    width: 40px;
+                    height: 40px;
+                    background: url(../assets/trash.png);
+                    background-size: cover;
+                    margin: 0 0 0 20px;
+                }
+            }
+
+            
         }
     }
 }

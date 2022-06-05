@@ -1,11 +1,13 @@
 <template>
 <div class="inp_wrap">
-    <span class="before">{{type}}</span>
+    <span 
+    ref="span"
+    class="before">{{type}}</span>
     <div class="inp">
         <input 
-            v-model="value" 
+            v-model="value"
             type="text"
-            @input="view">
+            @input="toStore">
             </div>
     <div>
         <img src="../../assets/x.png" alt="">
@@ -14,19 +16,29 @@
 </div>
 </template>
 <script>
-import { ref } from 'vue'
+import { ref } from '@vue/reactivity'
+import { useStore } from 'vuex'
 
 export default {
     props: ['type','val'],
     setup() {
+        const store = useStore()
         const value = ref('')
-        const view = function(){
-            console.log(value.value)
-        }
-        
+            const span = ref()
+            const toStore = function(){
+                if(span.value.innerText === 'Name'){
+                    store.state.name = value.value
+                    console.log(store.state.name)
+                }else if(span.value.innerText === 'Password'){
+                     store.state.password = value.value
+                    console.log(store.state.password)
+                }
+            }
         return{
-            value,
-            view
+            toStore,
+            span,
+            store,
+            value
         }
     },
 }

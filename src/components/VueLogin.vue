@@ -22,7 +22,7 @@
 import router from '@/router'
 import VueButton from './UI/VueButton.vue'
 import VueField from './UI/VueField.vue'
-import { ref } from '@vue/reactivity'
+import { useStore } from 'vuex'
 export default {
   name: 'VueLogin',
   components: {
@@ -30,15 +30,16 @@ export default {
     VueField
 },
 setup() {
-  const name =ref('')
-  const password = ref('')
+
+  const store = useStore()
   function login(){
+    console.log(store.state.name + store.state.password)
+    if(store.state.name === 'admin' && store.state.password === '12345')
     router.push({path:'/todo'})
   }
   return{
     login,
-    name,
-    password,
+
   }
 }
 }

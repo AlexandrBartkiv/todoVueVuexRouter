@@ -3,6 +3,34 @@ html, body, p, h1, h2, h3 {
   padding: 0;
 }
 
+.button {
+  width: 421px;
+  height: 35px;
+  border: solid 2px #0076C0;
+  background-color: #0076C0;
+  font-family: Roboto;
+  color: white;
+  font-family: Roboto;
+  font-size: 25px;
+  margin: 40px 30px 20px 30px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.button:hover {
+  border: solid 2px #0076C0;
+  background: none;
+  color: #0076C0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.button:active {
+  background: #50d0ff;
+  border: solid 2px #50d0ff;
+  color: white;
+}
+
 .head {
   width: 100%;
   height: 53px;
@@ -178,34 +206,6 @@ footer p {
   color: #D60000;
 }
 
-.login_Form > .button {
-  width: 421px;
-  height: 35px;
-  border: solid 2px #0076C0;
-  background-color: #0076C0;
-  font-family: Roboto;
-  color: white;
-  font-family: Roboto;
-  font-size: 25px;
-  margin: 40px 30px 20px 30px;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
-}
-
-.login_Form > .button:hover {
-  border: solid 2px #0076C0;
-  background: none;
-  color: #0076C0;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.login_Form > .button:active {
-  background: #50d0ff;
-  border: solid 2px #50d0ff;
-  color: white;
-}
-
 .login_Form span {
   font-family: Roboto;
   font-size: 20px;
@@ -232,5 +232,162 @@ footer p {
   color: #333333;
   font-family: Roboto;
   font-size: 25px;
+}
+
+.ToDoPageWraper {
+  height: 100vh;
+  width: auto;
+  position: relative;
+}
+
+.ToDoPageWraper .background {
+  height: 797px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00A9E7), to(#005B9F));
+  background: linear-gradient(#00A9E7, #005B9F);
+  position: absolute;
+  opacity: 0.7;
+}
+
+.ToDoPageWraper .toDoWraper {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.ToDoPageWraper .toDoWraper img {
+  height: 119px;
+  width: 186px;
+  z-index: 1;
+  margin: 65px 0 66px 0;
+}
+
+.ToDoPageWraper .toDoWraper .todo {
+  width: 80%;
+  max-width: 1191px;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.ToDoPageWraper .toDoWraper .todo .addTask {
+  width: 70%;
+  height: 60px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0 30px 0;
+}
+
+.ToDoPageWraper .toDoWraper .todo .addTask input {
+  height: 100%;
+  width: 70%;
+  outline: none;
+  border: none;
+  background-color: #3333335e;
+  font-family: Roboto;
+  color: white;
+  font-size: 25px;
+  padding: 0 20px 0 20px;
+}
+
+.ToDoPageWraper .toDoWraper .todo .addTask .button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+}
+
+.ToDoPageWraper .toDoWraper .todo .task {
+  width: 70%;
+  height: 60px;
+  background-color: #ffffff44;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0 30px 0;
+}
+
+.ToDoPageWraper .toDoWraper .todo .task .non_comp {
+  border: solid 3px #0076C0;
+  border-radius: 3px;
+  background: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20px;
+  width: 20px;
+  padding: 3px;
+  margin: 0 20px 0 0;
+}
+
+.ToDoPageWraper .toDoWraper .todo .task .comp {
+  border: solid 3px #0076C0;
+  border-radius: 3px;
+  background: url(../assets/v.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20px;
+  width: 20px;
+  padding: 3px;
+  margin: 0 20px 0 0;
+}
+
+.ToDoPageWraper .toDoWraper .todo .task input {
+  height: 100%;
+  width: 70%;
+  outline: none;
+  border: none;
+  background-color: #3333335e;
+  font-family: Roboto;
+  color: white;
+  font-size: 25px;
+  padding: 0 20px 0 20px;
+}
+
+.ToDoPageWraper .toDoWraper .todo .task .inp_comp {
+  text-decoration: line-through;
+  background-color: #00c02088;
+}
+
+.ToDoPageWraper .toDoWraper .todo .task .bin {
+  width: 40px;
+  height: 40px;
+  background: url(../assets/trash.png);
+  background-size: cover;
+  margin: 0 0 0 20px;
 }
 /*# sourceMappingURL=styles.css.map */
