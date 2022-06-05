@@ -5,30 +5,30 @@
       <img src="../assets/Logo.png" alt="" srcset="">
     </header>
     <div class="body">
-      <div class="backgrond">
+      <div class="background"></div> 
+      <div class="info">
+        <div class="info_text">
         <h1>
           Welcome to <br>
           Business Analytics Online
         </h1>
-      </div>
-       <VueLogin/>
-      <div class="info">
-        <p>
-          <span>Business Analytics</span>  — a new, convenient tool for managing and forecasting your business <br> 
-          performance, which will help analyze your own finances and cash flows, visualize your <br>
+        
+        <p class="firstP">
+          <span>Business Analytics</span>  — a new, convenient tool for managing and forecasting your business  
+          performance, which will help analyze your own finances and cash flows, visualize your 
           reporting, business processes, KPI's
         </p>
         <div>
           <img src="../assets/v.png" alt="" srcset="">
           <span>Interactive Reporting</span>
-          <p>In just a few clicks, you can connect your data from 1C, CRM (Bitrix24, AmoCRM, ZohoCRM), <br> 
-            E-commerce (PROM.UA, Rozetka, ebay), Logistic (Nova Poshta), Google Analytics and many more <br> 
+          <p>In just a few clicks, you can connect your data from 1C, CRM (Bitrix24, AmoCRM, ZohoCRM), 
+            E-commerce (PROM.UA, Rozetka, ebay), Logistic (Nova Poshta), Google Analytics and many more  
             systems that reflect different aspects of business activities.</p>
         </div>
         <div>
           <img src="../assets/v.png" alt="" srcset="">
           <span>Automated data updates</span>
-          <p>The application automatically updates and <br> 
+          <p>The application automatically updates and  
             structures the data in just 60 seconds, saving you time and money.</p>
         </div>
         <div>
@@ -36,9 +36,9 @@
           <span>Data Security</span>
           <p>The Bank guarantees the safety of your personal data, ensuring their integrity and confidentiality.</p>
         </div>
-      </div>
-    </div>
-    <footer>
+        </div>
+        <VueLogin/>
+        <footer>
       <div class="footNav">
         <img src="../assets/Logo.png" alt="" srcset="">
         <nav>
@@ -50,10 +50,18 @@
           <a href="">Sitemap</a>
         </nav>
       </div>
-      <p>
-Copyright © 2020 Citigroup Inc. Citibank, N.A. Member FDIC. Equal Opportunity Lender.</p>
+      
+      <p>Copyright © 2020 Citigroup Inc. 
+        Citibank, N.A. Member FDIC. 
+        Equal Opportunity Lender.
+      </p>
+    
     </footer>
-   
+    <div class="footerBack"></div>
+      </div>
+      
+    </div>
+    
   </div>
 </template>
 

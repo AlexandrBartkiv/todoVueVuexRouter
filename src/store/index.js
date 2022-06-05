@@ -11,7 +11,7 @@ export default createStore({
   },
   mutations: {
     ADD_TODO(state){
-      state.todos.push({
+      state.todos.unshift({
         id: state.todos.length +1,
         body: state.newTodo,
         completed: false
