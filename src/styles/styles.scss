@@ -159,10 +159,22 @@ footer{
             margin: 0 10px 0 0;
         }
         .after{
-            font-family: $fontcommon;
-            font-size: 16px;
-            line-height: 18.75px;
-            color: #D60000;
+            opacity: 0;
+            span{
+                font-family: $fontcommon;
+                font-size: 16px;
+                line-height: 18.75px;
+                color: #D60000;
+            }
+        }
+        .afterNonValid{
+            opacity: 1;
+            span{
+                font-family: $fontcommon;
+                font-size: 16px;
+                line-height: 18.75px;
+                color: #D60000;
+            }
         }
     }
     span{
@@ -236,6 +248,7 @@ footer{
                     color: white;
                     font-size: 25px;
                     padding: 0 20px 0 20px;
+                    margin: 0 0 0 50px;
                 }
                 .button{
                     width: fit-content;

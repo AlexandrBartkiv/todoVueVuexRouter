@@ -13,7 +13,8 @@
             class="taskInp"
             placeholder="Add new Task..."
             v-model="newTask"
-            @change="newToDo">
+            @change="newToDo"
+            @keyup.enter="addTodo">
           <VueButton 
           text="Add Task"
           @click="addTodo"/>

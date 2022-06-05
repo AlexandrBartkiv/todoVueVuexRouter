@@ -7,11 +7,13 @@
         <input 
             v-model="value"
             type="text"
-            @input="toStore">
+            @input="toStore"
+            @blur="onBlur">
             </div>
-    <div>
+    <div class="after"
+    :class="{'afterNonValid': valid==0}">
         <img src="../../assets/x.png" alt="">
-        <span class="after">{{val}}</span>
+        <span>{{val}}</span>
     </div>
 </div>
 </template>
@@ -24,9 +26,20 @@ export default {
     setup() {
         const store = useStore()
         const value = ref('')
+        const valid = ref('1')
             const span = ref()
+            const onBlur = function(){
+                console.log(1)
+                console.log(value.value)
+                if(value.value == ''){
+                    valid.value = '0'
+                }else{
+                    valid.value = '1'
+                }
+            }
             const toStore = function(){
                 if(span.value.innerText === 'Name'){
+
                     store.state.name = value.value
                     console.log(store.state.name)
                 }else if(span.value.innerText === 'Password'){
@@ -38,7 +51,9 @@ export default {
             toStore,
             span,
             store,
-            value
+            value,
+            valid,
+            onBlur
         }
     },
 }

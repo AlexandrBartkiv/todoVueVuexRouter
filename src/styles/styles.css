@@ -200,6 +200,21 @@ footer p {
 }
 
 .login_Form .inp_wrap .after {
+  opacity: 0;
+}
+
+.login_Form .inp_wrap .after span {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 18.75px;
+  color: #D60000;
+}
+
+.login_Form .inp_wrap .afterNonValid {
+  opacity: 1;
+}
+
+.login_Form .inp_wrap .afterNonValid span {
   font-family: Roboto;
   font-size: 16px;
   line-height: 18.75px;
@@ -317,6 +332,7 @@ footer p {
   color: white;
   font-size: 25px;
   padding: 0 20px 0 20px;
+  margin: 0 0 0 50px;
 }
 
 .ToDoPageWraper .toDoWraper .todo .addTask .button {
